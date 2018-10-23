@@ -1,0 +1,15 @@
+Id	Description	Model	Scale	ActionId	ActionPrefix	AIScript	AttrId	Skills
+int	string	string	float	int	string	string	int	int_array
+1	我	Monster/ChangAn/5_Npc_Private_03	1	1			1	1|2|3|4|5
+2	州牧	Hero/3_Wizard/3_Wizard_A_01	0.7	1			1000	900
+3	刺史	Hero/3_Wizard/3_Wizard_A_01	0.7	1			1000	900
+4	太守	Hero/3_Wizard/3_Wizard_A_02	0.7	1			1000	900
+5	长史	Hero/3_Wizard/3_Wizard_A_03	0.7	1			1000	900
+6	县令	Hero/3_Wizard/3_Wizard_A_04	0.7	1			1000	900
+7	县丞	Hero/3_Wizard/3_Wizard_A_05	0.7	1			1000	900
+8	县尉	Hero/3_Wizard/3_Wizard_A_06	0.7	1			1000	900
+9	举人	Hero/3_Wizard/3_Wizard_A_07	0.7	1			1000	900
+10	秀才	Hero/3_Wizard/3_Wizard_A_08	0.7	1			1000	900
+11	平民	Hero/3_Wizard/3_Wizard_A_09	0.7	1			1000	900
+12	商人	Hero/3_Wizard/3_Wizard_A_10	0.7	1			1000	900
+13	教头	Hero/3_Wizard/3_Wizard_A_11	0.7	1			1000	900

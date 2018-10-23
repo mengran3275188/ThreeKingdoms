@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<workspace name="UnityClient" folder="behaviors" export="exported" language="cs" version="3">
+  <export>
+    <cs>
+      <isexported>False</isexported>
+      <exportfilecount>1</exportfilecount>
+      <folder>../../../../Src/UnityClient/</folder>
+    </cs>
+    <bson>
+      <isexported>False</isexported>
+    </bson>
+    <xml>
+      <isexported>True</isexported>
+    </xml>
+  </export>
+</workspace>

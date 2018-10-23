@@ -1,0 +1,90 @@
+script(1)
+{
+	onmessage("start")
+	{
+		log("scene start");
+		createcharacter(1, vector3(61, 0, 102), vector3(0, 0, 0))
+		{
+			mainplayer();
+            attr(1);
+			physics(false, vector3(0,1,0), 2, 0.5);
+		};
+
+		createcharacter(2, vector3(60, 0, 60), vector3(0, 0, 0))
+		{
+			ai("FirstBT");
+            attr(1000);
+			physics(false, vector3(0,1,0), 2, 0.5);
+		};
+		createcharacter(3, vector3(55, 0, 55), vector3(0, 0, 0))
+		{
+			ai("FirstBT");
+            attr(1000);
+			physics(false, vector3(0,1,0), 2, 0.5);
+		};
+		
+		createcharacter(4, vector3(65, 0, 60), vector3(0, 0, 0))
+		{
+			ai("FirstBT_0");
+            attr(1001);
+			physics(false, vector3(0,1,0), 2, 0.5);
+		};
+		createcharacter(5, vector3(60, 0, 65), vector3(0, 0, 0))
+		{
+			ai("FirstBT_0");
+            attr(1001);
+			physics(false, vector3(0,1,0), 2, 0.5);
+		};
+		createcharacter(6, vector3(70, 0, 65), vector3(0, 0, 0))
+		{
+			ai("FirstBT_1");
+            attr(1002);
+			physics(false, vector3(0,1,0), 2, 0.5);
+		};
+		createcharacter(7, vector3(65, 0, 70), vector3(0, 0, 0))
+		{
+			ai("FirstBT_1");
+            attr(1002);
+			physics(false, vector3(0,1,0), 2, 0.5);
+		};
+		createcharacter(8, vector3(75, 0, 70), vector3(0, 0, 0))
+		{
+			ai("FirstBT_2");
+            attr(1003);
+			physics(false, vector3(0,1,0), 2, 0.5);
+		};
+		createcharacter(9, vector3(70, 0, 75), vector3(0, 0, 0))
+		{
+			ai("FirstBT_2");
+            attr(1003);
+			physics(false, vector3(0,1,0), 2, 0.5);
+		};
+		createcharacter(10, vector3(70, 0, 75), vector3(0, 0, 0))
+		{
+			ai("FirstBT_2");
+            attr(1003);
+			physics(false, vector3(0,1,0), 2, 0.5);
+		};
+		createcharacter(11, vector3(70, 0, 75), vector3(0, 0, 0))
+		{
+			ai("FirstBT_2");
+            attr(1003);
+			physics(false, vector3(0,1,0), 2, 0.5);
+		};
+		createcharacter(12, vector3(70, 0, 75), vector3(0, 0, 0))
+		{
+			ai("FirstBT_2");
+            attr(1003);
+			physics(false, vector3(0,1,0), 2, 0.5);
+		};
+		createcharacter(13, vector3(70, 0, 75), vector3(0, 0, 0))
+		{
+			ai("FirstBT_2");
+            attr(1003);
+			physics(false, vector3(0,1,0), 2, 0.5);
+		};
+		
+		wait(3000);
+		log("scene stoped");
+	};
+};

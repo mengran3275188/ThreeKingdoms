@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EBE6EBAE-A092-4895-A7A3-8BD6179BDB5C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Entitas.Component</RootNamespace>
+    <AssemblyName>Entitas.Component</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Behaviac, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Plugins\Behaviac.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Plugins\Entitas.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas.CodeGeneration.Attributes, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Plugins\Entitas.CodeGeneration.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Plugins\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\UnityClient\EntitasGenerated\GameState\GameStateAttribute.cs">
+      <Link>Attribute\GameStateAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\UnityClient\EntitasGenerated\Game\GameAttribute.cs">
+      <Link>Attribute\GameAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\UnityClient\EntitasGenerated\Input\InputAttribute.cs">
+      <Link>Attribute\InputAttribute.cs</Link>
+    </Compile>
+    <Compile Include="AttributeData.cs" />
+    <Compile Include="AttributeEnum.cs" />
+    <Compile Include="DataReader\AttributeConfigProvider.cs" />
+    <Compile Include="DataReader\DataReader.cs" />
+    <Compile Include="DataReader\FilePathDefine.cs" />
+    <Compile Include="Define\GameDefine.cs" />
+    <Compile Include="Define\KeyboardCode.cs" />
+    <Compile Include="Define\StartSkillParam.cs" />
+    <Compile Include="Components\GameStateComponents.cs" />
+    <Compile Include="ICamera.cs" />
+    <Compile Include="IChunk.cs" />
+    <Compile Include="IHud.cs" />
+    <Compile Include="Components\InputComponents.cs" />
+    <Compile Include="IRigidbody.cs" />
+    <Compile Include="IScrollView.cs" />
+    <Compile Include="IView.cs" />
+    <Compile Include="Components\MovementComponents.cs" />
+    <Compile Include="IVolumetricLine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Components\ResourceComponents.cs" />
+    <Compile Include="SceneInstanceInfo.cs" />
+    <Compile Include="Components\SingletonComponets.cs" />
+    <Compile Include="Components\SkillComponents.cs" />
+    <Compile Include="Scriptable\CommandHelper.cs" />
+    <Compile Include="Scriptable\CommandManager.cs" />
+    <Compile Include="Scriptable\CommonCommands\Assign.cs" />
+    <Compile Include="Scriptable\CommonCommands\Foreach.cs" />
+    <Compile Include="Scriptable\CommonCommands\IfElse.cs" />
+    <Compile Include="Scriptable\CommonCommands\LocalMessage.cs" />
+    <Compile Include="Scriptable\CommonCommands\Log.cs" />
+    <Compile Include="Scriptable\CommonCommands\Terminate.cs" />
+    <Compile Include="Scriptable\CommonCommands\Wait.cs" />
+    <Compile Include="Scriptable\CommonCommands\While.cs" />
+    <Compile Include="Scriptable\CommonValues\Arithmetic.cs" />
+    <Compile Include="Scriptable\CommonValues\Compare.cs" />
+    <Compile Include="Scriptable\CommonValues\GeneralValues.cs" />
+    <Compile Include="Scriptable\CommonValues\Logic.cs" />
+    <Compile Include="Scriptable\CommonValues\String.cs" />
+    <Compile Include="Scriptable\CommonValues\Time.cs" />
+    <Compile Include="Scriptable\ConfigManager.cs" />
+    <Compile Include="Scriptable\CSharpInstance.cs" />
+    <Compile Include="Scriptable\ICommand.cs" />
+    <Compile Include="Scriptable\ICommandFactory.cs" />
+    <Compile Include="Scriptable\Instance.cs" />
+    <Compile Include="Scriptable\IValue.cs" />
+    <Compile Include="Scriptable\Program.cs" />
+    <Compile Include="Scriptable\ValueHelper.cs" />
+    <Compile Include="Scriptable\ValueManager.cs" />
+    <Compile Include="SkillInstanceInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ScriptableData\ScriptableData.csproj">
+      <Project>{4295c1b7-d43f-4e38-85ad-33623489fbbe}</Project>
+      <Name>ScriptableData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{ea8f8fd9-bda8-4368-881f-f0c820907f7a}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

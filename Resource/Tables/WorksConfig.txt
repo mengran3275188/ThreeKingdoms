@@ -1,0 +1,5 @@
+Id	Description	CostAction	AddAttrType	AddAttrValue
+int	string	int	int	int
+1	—ßœ∞	10	2	1
+2	∂Õ¡∂	10	0	1
+3	¥Ú∞Á	10	4	1

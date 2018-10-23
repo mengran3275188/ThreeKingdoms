@@ -1,0 +1,5 @@
+Id	Description	Name	Script	Navmesh
+int	string	string	string	string
+1	主城场景	MainCity	Tables/Scene/MainCity.mr	Tables/Scene/Test.navmesh
+2	Loading场景	Loading	Tables/Scene/Loading.mr	Tables/Scene/Test.navmesh
+3	第一关场景	MainCity	Tables/Scene/Level1.mr	Tables/Scene/Test.navmesh
